@@ -1,4 +1,64 @@
 @tailwind base;
 /* Write your global styles here, in PostCSS syntax */
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+@layer utilities {
+  @responsive {
+    .object-fit-fill {
+      object-fit: fill;
+    }
+
+    .object-fit-contain {
+      object-fit: contain;
+    }
+
+    .object-fit-cover {
+      object-fit: cover;
+    }
+
+    .object-fit-none {
+      object-fit: none;
+    }
+
+    .object-fit-scale-down {
+      object-fit: scale-down;
+    }
+
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.80);
+    }
+
+    .text-shadow-soft {
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.40);
+    }
+
+    .text-shadow-none {
+      text-shadow: none;
+    }
+
+    .width-500 {
+      width: 500px;
+    }
+
+    .stream-sm {
+      width: 300px;
+      height: 169px;
+    }
+
+    .stream-md {
+      width: 400px;
+      height: 225px;
+    }
+
+    .stream-lg {
+      width: 500px;
+      height: 281px;
+    }
+
+    .stream-xl {
+      width: 700px;
+      height: 394px;
+    }
+  }
+}

@@ -2,4 +2,4 @@
   export let href;;
 </script>
 
-<a {href} class="transition-colors mx-2 uppercase hover:text-logo"><slot /></a>
+<a {href} class="text-sm lg:text-lg transition-colors mx-2 uppercase whitespace-nowrap hover:text-logo"><slot /></a>
