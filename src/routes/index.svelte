@@ -1,5 +1,13 @@
 <script>
   import Banner from '../components/Banner/index.svelte';
+
+  let src = "https://player.twitch.tv/?channel=k0mpa&parent=";
+
+  if (typeof window === 'undefined') {
+    src += "k0mpa-com.vercel.app";
+  } else {
+    src += window?.location?.hostname || 'k0mpa-com.vercel.app';
+  }
 </script>
 
 <style>
@@ -15,7 +23,7 @@
     <div class="stream-sm md:stream-md lg:stream-md xl:stream-xl border-2 border-red-700 rounded-lg overflow-hidden">
       <iframe
         title="K0mpa Stream"
-        src={`https://player.twitch.tv/?channel=k0mpa&parent=${window?.location?.hostname || 'k0mpa-com.vercel.app'}`}
+        src={`https://player.twitch.tv/?channel=k0mpa&parent=${src}`}
         width="720"
         height="420"
         allowfullscreen="allowfullscreen">
