@@ -23,7 +23,7 @@
     <div class="stream-sm md:stream-md lg:stream-md xl:stream-xl border-2 border-red-700 rounded-lg overflow-hidden">
       <iframe
         title="K0mpa Stream"
-        src={`https://player.twitch.tv/?channel=k0mpa&parent=${src}`}
+        {src}
         width="720"
         height="420"
         allowfullscreen="allowfullscreen">
