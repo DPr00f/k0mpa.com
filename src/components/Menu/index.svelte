@@ -39,6 +39,6 @@ import { tick } from 'svelte';
   <li><A href="/">Home</A></li>
   <li><A href="/about">Sobre Mim</A></li>
   <li><A href="/coach">Coach/Demo Review</A></li>
-  <li><A href="/donations">Donations</A></li>
+  <li><A href="https://streamelements.com/k0mpa/tip">Donations</A></li>
   <li><A href="/contact">Contactos</A></li>
 </ul>
